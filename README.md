@@ -17,3 +17,6 @@ Project ini merupakan form input sederhana menggunakan PHP dengan konsep Object 
 1. Jalankan di localhost (XAMPP/Laragon)
 2. Buka folder project
 3. Akses melalui browser
+
+## Update
+Perbaikan tampilan form
