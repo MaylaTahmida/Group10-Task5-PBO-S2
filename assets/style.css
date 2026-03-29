@@ -22,7 +22,7 @@ body {
 
 /* HOVER INTERAKTIF */
 .container:hover {
-    transform: translateY(-6px);
+    transform: translateY(-5px);
     box-shadow: 0 20px 40px rgba(0,0,0,0.3);
 }
 
@@ -74,7 +74,7 @@ label {
     transition: 0.3s;
 }
 
-/* FLOATING LABEL */
+/* FLOAT EFFECT */
 input:focus + label,
 input:valid + label,
 textarea:focus + label,
@@ -88,7 +88,7 @@ textarea:valid + label {
 input:focus,
 textarea:focus {
     border-color: #667eea;
-    box-shadow: 0 0 6px rgba(102,126,234,0.4);
+    box-shadow: 0 0 5px rgba(102,126,234,0.4);
 }
 
 /* BUTTON */
