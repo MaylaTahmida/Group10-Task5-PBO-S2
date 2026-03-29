@@ -1,0 +1,23 @@
+<?php
+
+class User {
+    public $firstname;
+    public $lastname;
+    public $phone;
+    public $address;
+
+    public function __construct($firstname, $lastname, $phone, $address) {
+        $this->firstname = htmlspecialchars($firstname);
+        $this->lastname = htmlspecialchars($lastname);
+        $this->phone = htmlspecialchars($phone);
+        $this->address = htmlspecialchars($address);
+    }
+
+    public function tampilkan() {
+        return "
+        <b>Hi, my name is {$this->firstname} {$this->lastname}</b><br>
+        Phone Number: {$this->phone}<br>
+        Address: {$this->address}
+        ";
+    }
+}

@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+}
+
+/* CARD */
+.container {
+    width: 450px;
+    margin: 80px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+
+/* HOVER INTERAKTIF */
+.container:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+}
+
+h2 {
+    margin-bottom: 25px;
+}
+
+/* GRID */
+.row {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.input-group {
+    position: relative;
+    flex: 1;
+}
+
+.full {
+    width: 100%;
+}
+
+/* INPUT */
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+    transition: 0.3s;
+    font-size: 14px;
+}
+
+textarea {
+    resize: none;
+}
+
+/* LABEL */
+label {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    color: #888;
+    font-size: 13px;
+    pointer-events: none;
+    background: white;
+    padding: 0 5px;
+    transition: 0.3s;
+}
+
+/* FLOATING LABEL */
+input:focus + label,
+input:valid + label,
+textarea:focus + label,
+textarea:valid + label {
+    top: -8px;
+    font-size: 11px;
+    color: #667eea;
+}
+
+/* FOCUS EFFECT */
+input:focus,
+textarea:focus {
+    border-color: #667eea;
+    box-shadow: 0 0 6px rgba(102,126,234,0.4);
+}
+
+/* BUTTON */
+.btn {
+    width: 100%;
+    padding: 12px;
+    margin-top: 8px;
+    border: none;
+    border-radius: 8px;
+    background: #667eea;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #5a67d8;
+    transform: scale(1.02);
+}
+
+.reset {
+    background: #ccc;
+}
+
+.reset:hover {
+    background: #999;
+}
+
+/* HASIL */
+.hasil {
+    margin-top: 20px;
+    padding: 15px;
+    background: #f7f7ff;
+    border-left: 4px solid #667eea;
+    border-radius: 8px;
+    animation: fadeIn 0.4s ease;
+}
+
+/* ANIMASI */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(8px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
