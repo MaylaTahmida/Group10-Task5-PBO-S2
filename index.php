@@ -1,68 +1,67 @@
 <?php 
-// Menghubungkan file process.php untuk memproses data form
+//menghubungkan file process.php untuk memproses data form
 include "includes/process.php"; 
 ?>
 
 <!DOCTYPE html>
 <html>
 <head>
-    <!-- Judul halaman -->
+
+<!-- judul halaman -->
     <title>Form Input</title>
 
-    <!-- Menghubungkan file CSS untuk styling -->
+    <!-- menghubungkan file css untuk styling -->
     <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
 
-<!-- Container utama untuk membungkus form -->
+<!-- container utama untuk membungkus form -->
 <div class="container">
     <h2>Form Input</h2>
 
-    <!-- Form menggunakan method POST -->
+    <!-- form menggunakan method post -->
     <form method="POST" class="form">
 
-        <!-- Baris input firstname dan lastname -->
+        <!-- baris input firstname dan lastname -->
         <div class="row">
             <div class="input-group">
-                <!-- Input Firstname -->
+                <!-- input firstname -->
                 <input type="text" name="firstname" required>
                 <label>First Name</label>
             </div>
 
             <div class="input-group">
-                <!-- Input Lastname -->
+                <!-- input Lastname -->
                 <input type="text" name="lastname" required>
                 <label>Last Name</label>
             </div>
         </div>
 
-        <!-- Baris input nomor telepon -->
+        <!-- baris input nomor telepon -->
         <div class="row">
             <div class="input-group full">
-                <!-- Input Phone Number -->
                 <input type="text" name="phone" required>
                 <label>Phone Number</label>
             </div>
         </div>
 
-        <!-- Baris input alamat -->
+        <!-- baris input alamat -->
         <div class="row">
             <div class="input-group full">
-                <!-- Input Address -->
                 <textarea name="address" required></textarea>
                 <label>Address</label>
             </div>
         </div>
 
-        <!-- Tombol submit untuk mengirim data -->
+        <!-- tombol submit untuk mengirim data -->
         <button type="submit" class="btn">Submit</button>
 
-        <!-- Tombol reset untuk menghapus input -->
+        <!-- tombol reset untuk menghapus input -->
         <button type="reset" class="btn reset">Reset</button>
 
     </form>
 
-    <!-- Menampilkan hasil input dari PHP -->
+    <!-- menampilkan hasil input dari php -->
     <div class="hasil">
         <?php echo $hasil; ?>
     </div>

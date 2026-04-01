@@ -9,7 +9,6 @@ body {
     background: linear-gradient(135deg, #667eea, #764ba2);
 }
 
-/* CARD */
 .container {
     width: 450px;
     margin: 80px auto;
@@ -20,7 +19,6 @@ body {
     transition: 0.3s;
 }
 
-/* HOVER INTERAKTIF */
 .container:hover {
     transform: translateY(-5px);
     box-shadow: 0 20px 40px rgba(0,0,0,0.3);
@@ -30,7 +28,6 @@ h2 {
     margin-bottom: 25px;
 }
 
-/* GRID */
 .row {
     display: flex;
     gap: 10px;
@@ -46,7 +43,6 @@ h2 {
     width: 100%;
 }
 
-/* INPUT */
 input, textarea {
     width: 100%;
     padding: 12px;
@@ -61,7 +57,6 @@ textarea {
     resize: none;
 }
 
-/* LABEL */
 label {
     position: absolute;
     top: 12px;
@@ -74,7 +69,6 @@ label {
     transition: 0.3s;
 }
 
-/* FLOAT EFFECT */
 input:focus + label,
 input:valid + label,
 textarea:focus + label,
@@ -84,14 +78,12 @@ textarea:valid + label {
     color: #667eea;
 }
 
-/* FOCUS EFFECT */
 input:focus,
 textarea:focus {
     border-color: #667eea;
     box-shadow: 0 0 5px rgba(102,126,234,0.4);
 }
 
-/* BUTTON */
 .btn {
     width: 100%;
     padding: 12px;
@@ -118,7 +110,6 @@ textarea:focus {
     background: #999;
 }
 
-/* HASIL */
 .hasil {
     margin-top: 20px;
     padding: 15px;
@@ -128,7 +119,6 @@ textarea:focus {
     animation: fadeIn 0.4s ease;
 }
 
-/* ANIMASI */
 @keyframes fadeIn {
     from {
         opacity: 0;
