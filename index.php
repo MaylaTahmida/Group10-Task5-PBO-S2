@@ -26,13 +26,13 @@ include "includes/process.php";
             <div class="input-group">
                 <!-- Input Firstname -->
                 <input type="text" name="firstname" required>
-                <label>Firstname</label>
+                <label>First Name</label>
             </div>
 
             <div class="input-group">
                 <!-- Input Lastname -->
                 <input type="text" name="lastname" required>
-                <label>Lastname</label>
+                <label>Last Name</label>
             </div>
         </div>
 
